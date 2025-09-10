@@ -156,7 +156,19 @@
       let totalCost = cost + tax;
       console.log('Total Cost: $${totalCost}');
    
-      let cartQuantity = 0;       
+      let cartQuantity = 10;   
+      
+      if (cartQuantity >= 10) {
+        console.log('Cart is full, Don\'t update quantity');
+      } else {
+        console.log('You have ${cartQuantity} items in your cart, Update quantity');
+      }
+
+      if (cartQuantity <= 0) {
+        console.log('Cart is empty, Not enough items, Don\'t update quantity');
+      } else {
+        console.log('You have ${cartQuantity} items in your cart, Update quantity');
+      }
   </script>
 </body>
 </html>
