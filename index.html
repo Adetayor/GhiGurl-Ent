@@ -77,37 +77,48 @@
       </button>
 
       <button onclick=
-        "cartQuantity = cartQuantity++;
+        " if (cartQuantity + 1 > 10) { alert('The cart is full, Don\'t update quantity');
+        } else { 
+        cartQuantity = cartQuantity ++;
         console.log(`Cart quantity: 
-        ${cartQuantity}`);">
+        ${cartQuantity}`);}
+        ">
           Add to Cart
       </button>
 
       <button onclick=
-        "cartQuantity = cartQuantity+= 2;
+        " if (cartQuantity + 2 > 10) { alert('The cart is full,Don\'t update quantity');
+        } else {cartQuantity = cartQuantity += 2;
         console.log(`Cart quantity: 
-        ${cartQuantity}`);">
+        ${cartQuantity}`);}
+        ">
           +2
       </button>
 
       <button onclick=
-        "cartQuantity = cartQuantity+= 3;
+        " if (cartQuantity + 3 > 10) { alert('The cart is full, Don\'t update quantity');
+        } else  {cartQuantity = cartQuantity += 3;
         console.log(`Cart quantity: 
-        ${cartQuantity}`);">
+        ${cartQuantity}`);}
+        ">
           +3
       </button>
 
       <button onclick=
-        "cartQuantity = cartQuantity+= 4;
+        " if (cartQuantity + 4 > 10) { alert('The cart is full, Don\'t update quantity');
+        } else {cartQuantity = cartQuantity += 4;
         console.log(`Cart quantity: 
-        ${cartQuantity}`);">
+        ${cartQuantity}`);}
+        ">
           +4
       </button>
 
       <button onclick=
-        "cartQuantity = cartQuantity+= 5;
+        " if (cartQuantity + 4 > 10) { alert('The cart is full,Don\'t update quantity');
+        } else {cartQuantity = cartQuantity += 5;
         console.log(`Cart quantity: 
-        ${cartQuantity}`);">
+        ${cartQuantity}`);}
+        ">
           +5
       </button>
 
@@ -122,21 +133,27 @@
 
   <div>
     <button onclick=
-        "cartQuantity = cartQuantity--;
+        "if (cartQuantity - 1 < 0) { alert('Not enough items in the cart, Don\'t update quantity');
+        } else {cartQuantity = cartQuantity --;
         console.log(`Cart quantity: 
-        ${cartQuantity}`);">
+        ${cartQuantity}`);}
+        ">
           Remove from Cart
       </button>
     <button onclick=
-        "cartQuantity = cartQuantity-= 2;
+        " if (cartQuantity - 2 < 0) { alert('Not enough items in the cart, Don\'t update quantity');
+        } else {cartQuantity = cartQuantity -= 2;
         console.log(`Cart quantity: 
-        ${cartQuantity}`);">
+        ${cartQuantity}`);}
+        ">
           -2
       </button>
     <button onclick=
-        "cartQuantity = cartQuantity-= 3;
+        " if (cartQuantity - 3 < 0) { alert('Not enough items in the cart, Don\'t update quantity');
+        } else {cartQuantity = cartQuantity-= 3;
         console.log(`Cart quantity: 
-        ${cartQuantity}`);">
+        ${cartQuantity}`);}
+        ">
           -3
       </button>
   </div>
@@ -158,17 +175,17 @@
    
       let cartQuantity = 10;   
       
-      if (cartQuantity >= 10) {
-        console.log('Cart is full, Don\'t update quantity');
-      } else {
-        console.log('You have ${cartQuantity} items in your cart, Update quantity');
-      }
+      // if (cartQuantity >= 10) {
+      //   console.log('Cart is full, Don\'t update quantity');
+      // } else {
+      //   console.log('You have ${cartQuantity} items in your cart, Update quantity');
+      // }
 
-      if (cartQuantity <= 0) {
-        console.log('Cart is empty, Not enough items, Don\'t update quantity');
-      } else {
-        console.log('You have ${cartQuantity} items in your cart, Update quantity');
-      }
+      // if (cartQuantity <= 0) {
+      //   console.log('Cart is empty, Not enough items, Don\'t update quantity');
+      // } else {
+      //   console.log('You have ${cartQuantity} items in your cart, Update quantity');
+      // }
   </script>
 </body>
 </html>
